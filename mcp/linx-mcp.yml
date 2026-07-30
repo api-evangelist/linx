@@ -1,0 +1,52 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.linx.security/blog/introducing-the-linx-mcp-server
+status: published
+notes: >-
+  Linx announced the Linx MCP Server on 2025-06-04 as a runtime service that exposes the Linx
+  identity security and governance platform to LLM agents over the Model Context Protocol. The
+  product is real and announced by the vendor, but Linx publishes no public endpoint URL, no
+  transport details, no tool schema, and no installation/configuration documentation — the server
+  is reached through the customer's Linx tenant. Tools below are the capability areas named
+  verbatim in the announcement, NOT a harvested tool manifest; no tool names are asserted.
+server:
+  name: Linx MCP Server
+  vendor: Linx Security
+  announced: '2025-06-04'
+  transport: undisclosed
+  url: null
+  access: customer-tenant
+  public_endpoint: false
+capability_areas:
+- name: Deep graph-based visibility, insights and intelligence
+  description: >-
+    Let agents ask and query the Linx Identity Graph to answer any question on the identity data.
+- name: Unified Identity Security and Governance
+  description: >-
+    Give AI agents safe, governed access to sensitive identity actions like human and non-human
+    identity investigation, risk detection, as well as access profile, JIT access request, and
+    Access Certification.
+- name: Automation and Remediation at Scale
+  description: >-
+    Let agents flag, recommend, or even trigger the cleanup of unused, risky, or unapproved access,
+    as well as secure identity lifecycle management and access governance.
+clients:
+  description: >-
+    Announced as supporting bi-directional integrations with third-party agents.
+  named:
+  - ChatGPT
+  - Claude
+  - Gemini
+  - Linx AI-assistant
+tools: []
+related_products:
+- name: MCP Gateway
+  description: >-
+    A separate Linx product providing real-time visibility and control over AI agents. It governs
+    MCP traffic rather than serving the Linx platform's own MCP surface.
+  source: https://www.linx.security/resource-center
+probe:
+  checked:
+  - {url: 'https://mcp.linx.security/', status: 0, result: dns-no-resolve}
+  - {url: 'https://mcp.linxsecurity.io/', status: 0, result: dns-no-resolve}
+  date: '2026-07-19'

@@ -1,0 +1,82 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://trust.linx.security/
+url: https://trust.linx.security/
+platform: Scytale
+platform_api: https://api.scytale.ai/views/trust-center/public/page-data
+title: Linx Security
+last_updated: '2026-06-11'
+description: >-
+  Welcome to our Trust Center — a centralized hub for showcasing our commitment to security,
+  privacy, and compliance. Here, you'll find transparent and up-to-date information about our
+  security practices, compliance certifications, and data protection policies.
+certifications:
+- SOC 2 Type II
+- SOC 1
+- ISO 27001:2022
+- ISO 42001
+- HIPAA
+- GDPR
+frameworks:
+- {name: SOC 2 Type II, id: soc2-type2, status: fully-implemented}
+- {name: SOC 1, id: soc1, status: fully-implemented}
+- {name: 'ISO 27001:2022', id: iso27001-2022, status: fully-implemented}
+- {name: ISO 42001, id: iso42001, status: fully-implemented}
+- {name: HIPAA, id: hipaa-v2, status: fully-implemented}
+- {name: GDPR, id: gdpr-2024, status: fully-implemented}
+documents:
+- {name: Non-Disclosure Agreement, format: pdf, restricted: false, uploaded: '2025-11-27'}
+- {name: Mutual Non-Disclosure Agreement (MNDA), format: pdf, restricted: false, uploaded: '2025-11-27'}
+- {name: Data Processing Agreement - DPA, format: pdf, restricted: true, uploaded: '2025-11-27'}
+- {name: AI Tools Policy & Procedures, format: pdf, restricted: true, uploaded: '2025-11-27'}
+- {name: Information Security Policy, format: pdf, restricted: true, uploaded: '2025-11-27'}
+- {name: Code of Business Conduct and Ethics, format: pdf, restricted: true, uploaded: '2025-11-27'}
+- {name: Business Continuity Plan, format: pdf, restricted: true, uploaded: '2025-12-18'}
+- {name: SOC2 Type II 2025, format: pdf, restricted: true, uploaded: '2026-03-04'}
+- {name: SOC1 Type II 2025, format: pdf, restricted: true, uploaded: '2026-03-09'}
+- {name: PenTest Confirmation - 2026, format: pdf, restricted: true, uploaded: '2026-03-31'}
+control_categories:
+- {name: Data Security, controls: 4}
+- {name: Product Security, controls: 7}
+- {name: Access Management, controls: 9}
+- {name: Security and Continuity Procedures, controls: 7}
+- {name: Organization Security, controls: 9}
+- {name: Endpoint Security, controls: 4}
+notable_controls:
+- Encryption at rest implemented (AES-256)
+- Encryption in transit implemented (TLS 1.2 or newer)
+- Penetration testing conducted annually by a third party
+- Vulnerability scanning procedures established (CVE scans; quarterly host-based scans on
+  external-facing systems)
+- Multi-Factor Authentication implemented for all sensitive and privileged access
+- Role Based Access Control (RBAC) established via a central identity provider
+- User Access Reviews conducted on production systems, databases and applications
+- Business Continuity and Disaster Recovery plans established and tested annually
+- Incident Response plan tested at least annually
+- Audit logging established across application and infrastructure layers
+- Production multi-availability zones utilized
+subprocessors:
+  count: 15
+  named:
+  - Auth0
+  - AWS
+  - Datadog
+  - GitHub
+  - HubSpot
+  - MongoDB
+  - Salesforce
+  - Slack
+  - Temporal.io
+  unnamed_note: >-
+    Six additional custom vendors are listed by description only (multi-model database, cloud
+    OpenAI models, project management/issue tracking, unified integrations API, customer
+    operations platform, email delivery). All listed vendors are located in the US.
+access:
+  request_access: true
+  note: >-
+    Restricted documents (SOC reports, policies, DPA, pen-test confirmation) require submitting a
+    request-access form through the trust center.
+evidence:
+- {source: 'https://trust.linx.security/', kind: trust-center, status: 200}
+- {source: 'https://api.scytale.ai/views/trust-center/public/page-data', kind: trust-center-api, status: 200}

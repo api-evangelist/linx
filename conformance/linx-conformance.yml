@@ -1,0 +1,76 @@
+generated: '2026-07-19'
+method: searched
+source: https://trust.linx.security/
+notes: >-
+  Linx publishes no public API specification, developer portal, or API reference, so no
+  spec-derived conformance assertions are possible. Every entry below is sourced from the
+  vendor-published Scytale trust center (compliance frameworks and implemented controls) or from
+  the published Service Level Agreement. Standards with no published evidence are recorded as
+  unknown rather than false.
+standards:
+- id: soc2-type2
+  name: SOC 2 Type II
+  conforms: true
+  evidence: trust center lists soc2-type2 as fully-implemented; SOC2 Type II 2025 report available on request
+- id: soc1
+  name: SOC 1
+  conforms: true
+  evidence: trust center lists soc1 as fully-implemented; SOC1 Type II 2025 report available on request
+- id: iso27001-2022
+  name: ISO/IEC 27001:2022
+  conforms: true
+  evidence: trust center lists iso27001-2022 as fully-implemented
+- id: iso42001
+  name: ISO/IEC 42001 (AI management systems)
+  conforms: true
+  evidence: trust center lists iso42001 as fully-implemented
+- id: hipaa
+  name: HIPAA
+  conforms: true
+  evidence: trust center lists hipaa-v2 as fully-implemented
+- id: gdpr
+  name: GDPR
+  conforms: true
+  evidence: trust center lists gdpr-2024 as fully-implemented; Data Processing Agreement published
+- id: tls12-plus
+  name: TLS 1.2+ in transit
+  conforms: true
+  evidence: trust center control "Encryption in transit implemented" specifies TLS 1.2 or newer; live probe of www.linx.security negotiated TLSv1.3
+- id: aes256-at-rest
+  name: AES-256 encryption at rest
+  conforms: true
+  evidence: trust center control "Encryption at rest implemented" specifies AES256
+- id: mcp
+  name: Model Context Protocol
+  conforms: true
+  evidence: Linx MCP Server announced 2025-06-04; see mcp/linx-mcp.yml
+- id: pci-dss
+  name: PCI DSS
+  conforms: unknown
+  evidence: not listed in the trust center; Linx blogs about customer PCI DSS 4.0 access-management obligations but claims no certification of its own
+- id: fedramp
+  name: FedRAMP
+  conforms: unknown
+  evidence: not listed in the trust center
+- id: csa-star
+  name: CSA STAR
+  conforms: unknown
+  evidence: not listed in the trust center
+- id: oauth2
+  name: OAuth 2.0
+  conforms: unknown
+  evidence: no public API specification or authentication documentation published
+- id: oidc
+  name: OpenID Connect
+  conforms: unknown
+  evidence: >-
+    app.linxsecurity.io/.well-known/openid-configuration returns 307 to /login (NextAuth catch-all),
+    not an OIDC discovery document
+- id: scim
+  name: SCIM 2.0
+  conforms: unknown
+  evidence: no public API specification published despite identity-provisioning product scope
+- id: rfc9457-problem-details
+  name: RFC 9457 Problem Details
+  conforms: unknown
+  evidence: no public API specification published

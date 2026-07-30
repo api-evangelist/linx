@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.linx.security/docs/sla
+notes: >-
+  Linx publishes a Service Level Agreement and a Master Services Agreement, but no public status
+  page, no changelog, no roadmap, and no versioning or deprecation policy. The MSA references "the
+  API provided by Company" and its Documentation, but that documentation is not public — there is
+  no docs/developer/api host resolving on linx.security.
+versioning:
+  scheme: undocumented
+  current: null
+  docs: null
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+sla:
+  url: https://www.linx.security/docs/sla
+  uptime_target: '99.5%'
+  measurement: quarterly
+  data_freshness: data from sources appears within 30 minutes of registration
+  service_credits:
+  - {uptime_band: 96.5%-99.5%, credit: 5% of the Fee}
+  - {uptime_band: 94%-96.5%, credit: 7.5% of the Fee}
+  - {uptime_band: below 94%, credit: 10% of the Fee}
+  support_response:
+  - {severity: High Priority, definition: key features unavailable, response: within 2 business hours}
+  - {severity: Medium Priority, definition: limited functionality loss, response: within 1 business day}
+  - {severity: Low Priority, definition: minor issues, response: within 2 business days}
+  discrepancy_note: >-
+    The published SLA commits to 99.5% measured quarterly. The trust center's "Service Level
+    Agreement established" control text instead describes a 99.9% availability commitment. Both
+    values are recorded as published; the SLA document is treated as authoritative.
+status_page: null
+changelog: null
+roadmap: null
+deprecated_operations: []
+probe:
+  date: '2026-07-19'
+  checked:
+  - {url: 'https://status.linx.security/', status: 0, result: dns-no-resolve}
+  - {url: 'https://www.linx.security/changelog', status: 404}
+  - {url: 'https://www.linx.security/roadmap', status: 404}
+  - {url: 'https://docs.linx.security/', status: 0, result: dns-no-resolve}
+  - {url: 'https://developer.linx.security/', status: 0, result: dns-no-resolve}
+  - {url: 'https://api.linx.security/', status: 0, result: dns-no-resolve}
