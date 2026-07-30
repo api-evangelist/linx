@@ -1,21 +1,52 @@
 aid: linx
 name: Linx
-description: 'Linx is a company surfaced as a portfolio company of insight-partners and added to the API
-  Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Linx Security is an AI-native identity security and governance platform covering the
+  full identity lifecycle across human, non-human, and AI-agent identities. The platform builds an
+  Identity Graph that normalizes identity data across SaaS, cloud, and on-prem systems, then layers
+  identity security posture management (dormant accounts, admin sprawl, SSO bypass, missing MFA),
+  modern IGA (access requests, approvals, provisioning, access certification), just-in-time access
+  in place of standing privileges, automated joiner-mover-leaver lifecycle management, and an
+  autonomous remediation agent called Autopilot. Linx also ships an MCP Server that exposes the
+  Identity Graph and governed identity actions to LLM agents, plus an MCP Gateway for controlling
+  AI agent traffic. Founded by Israel Duanis, Niv Goldenberg, and Sarit Reiner Frumkes, the company
+  is headquartered in New York and has raised $85M from Cyberstarts, Index Ventures, and Insight
+  Partners. Linx does not publish a public developer portal, API reference, or API specification —
+  the API referenced in its Master Services Agreement is documented to customers only.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/69529b4327b8e0f645d9edff/6994d775451e099494971ae4_OG.png
 url: https://raw.githubusercontent.com/api-evangelist/linx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+- cyberstarts
+- index-ventures
+x-tier: enriched
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Cybersecurity
+- Identity Security
+- Identity Governance
+- IGA
+- Access Management
+- Non-Human Identity
+- Agentic Identity
+- Just-In-Time Access
+- MCP
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +56,36 @@ maintainers:
 common:
 - type: Website
   url: https://www.linx.security/
+- type: Blog
+  url: https://www.linx.security/blog
+- type: Login
+  url: https://app.linxsecurity.io
+- type: GitHubOrganization
+  url: https://github.com/linx-security
+- type: TermsOfService
+  url: https://www.linx.security/docs/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.linx.security/docs/privacy-policy
+- type: TrustCenter
+  url: https://trust.linx.security/
+- type: Compliance
+  url: https://trust.linx.security/
+- type: MCPServer
+  name: Linx MCP Server
+  url: mcp/linx-mcp.yml
+- type: LLMsTxt
+  url: llms/linx-llms.txt
+- type: TrustCenter
+  name: Trust center artifact
+  url: security/linx-trust-center.yml
+- type: Conformance
+  url: conformance/linx-conformance.yml
+- type: Lifecycle
+  url: lifecycle/linx-lifecycle.yml
+- type: DomainSecurity
+  url: security/linx-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
