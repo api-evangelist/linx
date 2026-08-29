@@ -12,6 +12,17 @@ description: 'Linx Security is an AI-native identity security and governance pla
   is headquartered in New York and has raised $85M from Cyberstarts, Index Ventures, and Insight
   Partners. Linx does not publish a public developer portal, API reference, or API specification —
   the API referenced in its Master Services Agreement is documented to customers only.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
