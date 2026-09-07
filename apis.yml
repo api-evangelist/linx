@@ -65,6 +65,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: SignUp
+  url: https://www.linx.security/demo
+- type: Support
+  url: https://www.linx.security/resource-center
+- type: StatusPage
+  url: https://status.linxsecurity.io
 - type: Website
   url: https://www.linx.security/
 - type: Blog
